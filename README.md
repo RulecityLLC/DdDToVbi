@@ -7,13 +7,15 @@ This is a very quick n' dirty utility that I whipped up to convert VBI data from
 
 This library depends on mpolib2 ( https://github.com/RulecityLLC/mpolib2 ) and mpojson ( https://github.com/RulecityLLC/mpojson ) .
 
-## To build/install
+## To build
 
-These instructions assume you are installing to '/tmp/cmake_install/DdDToVbi'.  For Windows, you can substitute 'c:\temp\cmake_install' for '/tmp/cmake_install'.
+These instructions assume that your dependencies are already installed to /tmp/cmake_install.  For Windows, you can substitute 'c:\temp\cmake_install' for '/tmp/cmake_install'.
 
 ```
 mkdir build
 cd build
-cmake -DCMAKE_SYSTEM_PREFIX_PATH=/tmp/cmake_install -DCMAKE_INSTALL_PREFIX=/tmp/cmake_install/DdDToVbi ..
+cmake -DCMAKE_SYSTEM_PREFIX_PATH=/tmp/cmake_install ..
 make install
 ```
+
+This will create a single executable.  There is no installation step.
