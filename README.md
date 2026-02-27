@@ -15,7 +15,7 @@ These instructions assume that your dependencies are already installed to /tmp/c
 mkdir build
 cd build
 cmake -DCMAKE_SYSTEM_PREFIX_PATH=/tmp/cmake_install ..
-make install
+make
 ```
 
 This will create a single executable.  There is no installation step.
